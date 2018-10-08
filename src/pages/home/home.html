@@ -7,8 +7,13 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <p><button ion-button block (click)="postClick()">Post</button></p>
+  <p><button ion-button block (click)="getClick()">Get</button></p>
+  <p><button ion-button block (click)='clearClick()'>Clear</button></p>
+  <ion-card>
+    <ion-card-content>
+      <p>{{getresult}}</p>
+      <p>{{postresult}}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
